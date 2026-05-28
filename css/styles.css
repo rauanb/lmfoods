@@ -1,0 +1,92 @@
+/* Definição de cores */
+:root {
+    --cor-primaria: #002859;
+    --cor-secundaria: #1673b9;
+    --cor-terciaria: #4a9ddc;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.footer {
+    background-color: var(--cor-primaria);
+    padding: 16px;
+
+    p {
+        color: var(--cor-terciaria);
+        
+        a {
+            /* text-decoration: none; */
+            color: var(--cor-terciaria);
+        }
+    }
+}
+
+.navbar {
+    background-color: var(--cor-primaria);
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+}
+
+#cabecalho img {
+    width: 64px;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover{
+    color: var(--cor-terciaria)
+}
+
+.navbar-toggler {
+    background-color: var(--cor-secundaria)
+}
+
+.section-title {
+    /* font-family: Pacifico, cursive; */
+}
+
+.text-colored {
+    color: var(--cor-primaria);
+}
+
+/* Adicionar seções alternadas com o fundo colorido */
+#sobre,
+#cardapio,
+#produtos {
+    background-color: var(--cor-secundaria)
+}
+
+.nav-cardapio .nav-link.active,
+.nav-cardapio .nav-link.active:hover,
+#contato button {
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria)
+}
+
+.nav-cardapio .nav-link:hover {
+    color: var(--cor-primaria);
+}
+
+.social-link li {
+    text-decoration: none;
+    display: inline;
+}
+
+.social-link a {
+    text-decoration: none;
+}
+
+@media (max-width: 767px){
+    .carousel-item img {
+        height: 160px;
+    }
+}
+
+/* #produtos {
+    height: 768px;
+} */
