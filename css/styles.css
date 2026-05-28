@@ -33,7 +33,7 @@ body {
 }
 
 #cabecalho img {
-    width: 64px;
+    width: 80px;
 }
 
 #cabecalho .nav .nav-link,
@@ -52,6 +52,14 @@ body {
 
 .text-colored {
     color: var(--cor-primaria);
+}
+
+.text-colored2 {
+    color: var(--cor-secundaria);
+}
+
+.text-colored3 {
+    color: var(--cor-terciaria);
 }
 
 /* Adicionar seções alternadas com o fundo colorido */

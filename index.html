@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+    <header class="navbar navbar-expand-lg sticky-top p-0" id="cabecalho">
         <div class="container">
             <!-- m-0 retira a margem padrão do navbar-brand, centralizando o título na vertical -->
-            <h1 class="navbar-brand m-0 section-title fs-10">
+            <h1 class="navbar-brand m-0 fw-bold fs-10">
                 <img src="imgs/logomarca_v1_dark.png" alt="LMFoods">
                 LMFoods
             </h1>
@@ -45,7 +45,7 @@
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="#contato" class="nav-link">
+                        <a href="#contact" class="nav-link">
                             <i class="bi bi-envelope-fill me-1"></i>
                             Contact
                         </a>
@@ -57,7 +57,7 @@
 
     <!-- Todas as seções devem estar dentro dessa div com spy para funcionar o destaque da seção na navbar -->
     <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
-        <section id="products">
+        <section">
             <!-- Carousel -->
             <div class="carousel slide" data-bs-ride="carousel" id="carousel">
                 <div class="carousel-inner">
@@ -91,57 +91,66 @@
                     <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
                 </div>
             </div>
-                
-                <!-- Sobre -->
-                <div class="py-5">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-5">
-                                <!-- rounded deixa os cantos arredondados -->
-                                <img src="apicultura.jpg" class="w-100 d-block rounded" alt="">
-                            </div>
-                            <div class="col-md-7 mt-3 mt-md-0">
-                                <h2 class="section-title">Sobre <span class="text-colored">a apicultura</span></h2>
-                                <p>A apicultura consiste na criação de abelhas <i>Apis Melifera</i> com o objetivo de produzir mel, própolis, geléia real, pólen e cera de abelha. É uma atividade que não causa impactos ambientais negativos, mas que contribui para a preservação do meio ambiente.</p>
-                                <h3 class="section-title">Sobre <span class="text-colored">o apicultor</span></h3>
-                                <p>Valdecir Liberato trabalha com apicultura há mais de 30 anos, produzindo e comercializando principalmente mel e própolis na região de São José do Rio Preto. Tem parcerias com diversos produtores rurais em Bálsamo, Tanabi e Nova Aliança, onde implantou seus apiários e contribui para as polinização das plantações cultivadas.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-        <!-- Seção Serivços -->
-        <section id="about" class="py-5">
+        </section>
+        <section id="products">
+            <!-- Products -->
             <div class="container">
                 <div class="row">
-                    <h2 class="section-title text-center">Nossos <span class="text-colored">serviços</span></h2>
+                    <h2 class="fw-bold text-colored text-center">Our <span class="text-colored2">Products</span></h2>
                 </div>
-                <div class="row mt-4">
-                    <div class="col-md-4">
-                        <img src="servicos/comercio.jpg" alt="" class="d-block w-100 rounded mb-2">
-                        <h3 class="section-title text-colored fs-4">
-                            <i class="bi bi-bag"></i>
-                            Comércio de Mel e derivados
+                <div class="row mt-6">
+                    <div class="col-md-6">
+                        <img src="products/pizza1.png" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="fw-bold text-colored fs-4">
+                            <i class="bi"></i>
+                            Pizza
                         </h3>
-                        <p>Produção artesanal, desde a retirada de quadros da colméias, triagem dos favos, centrifugação e envase. Trabalhamos com mel puro, favo e própolis.</p>
+                        <p>Authentic Brazilian-style pizza, crafted with fresh ingredients and bold flavors that bring the true taste of Brazil to your table.</p>
                     </div>
-                    <div class="col-md-4">
-                        <img src="servicos/remocao.jpg" alt="" class="d-block w-100 rounded mb-2">
-                        <h3 class="section-title text-colored fs-4">
-                            <i class="bi bi-radioactive"></i>
-                            Remoção de enxames
+                    <div class="col-md-6">
+                        <img src="products/esfiha1.png" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="fw-bold text-colored fs-4">
+                            <i class="bi"></i>
+                            Esfiha
                         </h3>
-                        <!-- <p>A remoção de enxames em áreas que possam trazer riscos deve ser feita com cautela para garantir a segurança das pessoas e animais nas dependências, bem como das abelhas do enxame.</p> -->
-                        <p>A remoção de enxames em áreas residenciais deve ser feita com cautela para garantir a segurança das pessoas, animais e do próprio enxame.</p>
+                        <p>Traditional Middle Eastern pastry with a Brazilian twist, filled with seasoned meat and baked to golden perfection.</p>
                     </div>
-                    <div class="col-md-4">
-                        <img src="servicos/lavoura.jpeg" alt="" class="d-block w-100 rounded mb-2">
-                        <h3 class="section-title text-colored fs-4">
-                            <i class="bi bi-flower1"></i>
-                            Otimização da cultura
+                    <div class="col-md-6">
+                        <img src="products/spread.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="fw-bold text-colored fs-4">
+                            <i class="bi"></i>
+                            Creamyo Spread
                         </h3>
-                        <p>A adição de colméias nas proximidades favorece a polinização, as plantas se desenvolvem mais rapidamente e os frutos se têm menores chances de má formação.</p>
+                        <p>A creamy, versatile spread inspired by Brazilian flavors — perfect for breads, crackers, and everything in between.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="products/baked.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="fw-bold text-colored fs-4">
+                            <i class="bi"></i>
+                            Creamyo Bake
+                        </h3>
+                        <p>A rich, flavorful baking sauce that transforms your recipes, adding a touch of Brazilian warmth to every dish.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção About -->
+        <section id="about" class="py-5">
+            <div class="py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <!-- rounded deixa os cantos arredondados -->
+                            <img src="imgs/logomarca_v1_crop.png" class="w-100 d-block rounded" alt="">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="fw-bold text-colored">About <span class="text-colored2">Us</span></h2>
+                            <h3 class="text-colored3">Bringing the heart of Brazilian flavors to your table</h3>
+                            <p class="fs-5">LMFoods was born from a simple desire: to share the rich culinary heritage of Minas Gerais with the world. Nestled in the heart of Brazil, Minas Gerais is a region celebrated for its vibrant food culture, warm hospitality, and flavors that have been cherished for generations — and it's where our family story begins.
+                            When we made Calgary our home, we brought that tradition with us. Every sauce we craft carries the same care, the same ingredients, and the same love that have defined our family table for decades. Today, we are proud to serve the Calgary community, sharing a little taste of Brazil with every jar.
+                            Welcome to LMFoods — a little piece of Minas Gerais, right here in Calgary.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -151,65 +160,60 @@
         <section id="buy" class="py-5">
             <div class="container">
                 <div class="row">
-                    <h2 class="section-title text-center mb-5">Nossos <span class="text-colored">produtos</span></h2>
+                    <h2 class="fw-bold text-colored text-center">Where to <span class="text-colored2">Buy</span></h2>
                 </div>
-                <div class="row justify-content-center">
-                    <aside class="col-md-2">
-                        <nav class="nav nav-pills flex-column nav-cardapio">
-                            <button type="button" data-bs-toggle="tab" data-bs-target="#mel" class="nav-link text-colored fw-bold text-start text-center active">Mel</button>
-                            <button type="button" data-bs-toggle="tab" data-bs-target="#favo" class="nav-link text-colored fw-bold text-start text-center">Favo</button>
-                            <button type="button" data-bs-toggle="tab" data-bs-target="#propolis" class="nav-link text-colored fw-bold text-start text-center">Própolis</button>
-                        </nav>
-                    </aside>
+                <div class="row mt-6">
                     <div class="col-md-6">
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="mel">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <img class="d-block w-100 rounded" src="produtos/mel1.jpg" alt="Mel puro 1kg">
-                                        <h5 class="text-colored fw-bold mt-2 text-center">Mel puro 500g</h5>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <img class="d-block w-100 rounded" src="produtos/mel1.jpg" alt="Mel puro 3kg">
-                                        <h5 class="text-colored fw-bold mt-2 text-center">Mel puro 1kg</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="favo">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <img class="d-block w-100 rounded" src="produtos/favo1.jpg" alt="Favo silvestre 200g">
-                                        <h5 class="text-colored fw-bold mt-2 text-center">Favo 200g</h5>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <img class="d-block w-100 rounded" src="produtos/favo2.png" alt="Favo silvestre 500g">
-                                        <h5 class="text-colored fw-bold mt-2 text-center">Favo 500g</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="propolis">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <img class="d-block w-100 rounded" src="produtos/propolis1.png" alt="Própolis 10mL">
-                                        <h5 class="text-colored fw-bold mt-2 text-center">Própolis 10mL</h5>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <img class="d-block w-100 rounded" src="produtos/propolis2.png" alt="Própolis 20mL">
-                                        <h5 class="text-colored fw-bold mt-2 text-center">Própolis 20mL</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <img src="places/samba.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="fw-bold text-colored fs-4">
+                            <i class="bi"></i>
+                            Samba Brazilian Market
+                        </h3>
+                        <ul>
+                            <li>
+                                Address: 1289 Highfield Crescent SE #112, Calgary, AB T2G 5M2
+                            </li>
+                            <li>
+                                Phone: +1 587-839-6446
+                            </li>
+                            <li>
+                                Hours: Mon–Fri 11:00 AM–6:00 PM | Sat 10:00 AM–4:00 PM | Sun Closed
+                            </li>
+                            <li>
+                                Website: sambabrazilianmarket.com
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="places/abm.jpg"" class="d-block w-100 rounded mb-2">
+                        <h3 class="fw-bold text-colored fs-4">
+                            <i class="bi"></i>
+                            Alberta Brazilian Market
+                        </h3>
+                        <ul>
+                            <li>
+                                Address: 260300 Writing Creek Cres, Balzac, AB T4A 0X8
+                            </li>
+                            <li>
+                                Phone: +1 368-996-7085
+                            </li>
+                            <li>
+                                Hours: Mon–Sat 11:00 AM–7:00 PM | Sun 11:00 AM–6:00 PM
+                            </li>
+                            <li>
+                                Website: albertabrazilianmarket.com
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Seção contato -->
-        <section id="contato" class="py-5">
+        <section id="contact" class="py-5">
             <div class="container">
                 <div class="row">
-                    <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
+                    <h2 class="fw-bold text-colored text-center">Talk to <span class="text-colored2">Us</span></h2>
                 </div>
                 <div class="row">
                     <div class="col-md-7 mb-5">
