@@ -89,6 +89,10 @@ body {
     text-decoration: none;
 }
 
+.icon-color {
+    color: var(--cor-primaria);
+}
+
 @media (max-width: 767px){
     .carousel-item img {
         height: 160px;
