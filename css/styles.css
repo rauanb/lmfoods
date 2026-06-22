@@ -46,6 +46,12 @@ body {
     background-color: var(--cor-secundaria)
 }
 
+.carousel-item img {
+    /* height: 760px; */
+    height: 720px;
+    width: 100%;
+}
+
 .section-title {
     /* font-family: Pacifico, cursive; */
 }
@@ -95,7 +101,8 @@ body {
 
 @media (max-width: 767px){
     .carousel-item img {
-        height: 160px;
+        /* height: 160px; */
+        height: 152px;
     }
 }
 
