@@ -90,7 +90,7 @@ body {
 }
 
 .icon-color {
-    color: var(--cor-primaria);
+    color: var(--cor-secundaria);
 }
 
 @media (max-width: 767px){
