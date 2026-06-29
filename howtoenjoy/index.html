@@ -62,24 +62,45 @@
             <div class="container">
                 <div class="row">
                     <h2 class="fw-bold text-colored text-center"><span class="text-colored2">Recipes</span></h2>
+                    <h3 class="fw-bold text-colored text-center">Click to view</h3>
                 </div>
                 <div class="row mt-6">
+                    <!-- Card -->
                     <div class="col-md-6">
-                        <img src="../products/creamyo/bake.png" alt="" class="d-block w-100 rounded mb-2">
+                        <img 
+                            src="toast/avocadotoast.png" 
+                            alt="Creamyo with Avocado Toast"
+                            class="d-block w-100 rounded mb-2"
+                            style="cursor: pointer;"
+                            data-bs-toggle="modal"
+                            data-bs-target="#toastModal"
+                        >
+
                         <h3 class="fw-bold text-colored fs-4">
                             <i class="bi"></i>
-                            Creamy Cheese Spread — Bake Stable
+                            Creamyo with Avocado Toast
                         </h3>
-                        <p>Squeeze Tube · 250g</p>
+                        <p>With Creamyo Traditional</p>
                     </div>
+
+                    <!-- Card -->
                     <div class="col-md-6">
-                        <img src="../products/creamyo/bake3.png" alt="" class="d-block w-100 rounded mb-2">
+                        <img 
+                            src="appetizer/appetizer.png" 
+                            alt="Appetizer"
+                            class="d-block w-100 rounded mb-2"
+                            style="cursor: pointer;"
+                            data-bs-toggle="modal"
+                            data-bs-target="#appetizerModal"
+                        >
+
                         <h3 class="fw-bold text-colored fs-4">
                             <i class="bi"></i>
-                            Creamy Cheese Spread — Bake Stable
+                            Creamyo with Prosciutto, Gorgonzola & Honey
                         </h3>
-                        <p>Bulk · 3kg</p>
+                        <p>With Creamyo Culinary</p>
                     </div>
+                    
                 </div>
             </div>
         </section>
@@ -92,5 +113,49 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Modal -->
+    <div class="modal fade" id="toastModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Creamyo with Avocado Toast</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body text-center">
+                <img 
+                    src="toast/avocadotoast_r.jpeg" 
+                    alt="Avocado Toast Recipe"
+                    class="img-fluid rounded"
+                >
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="appetizerModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Creamyo with Prosciutto, Gorgonzola & Honey</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body text-center">
+                <img 
+                    src="appetizer/appetizer_r.png" 
+                    alt="Creamyo with prosciutto, gorgonzola and honey"
+                    class="img-fluid rounded"
+                >
+            </div>
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>
