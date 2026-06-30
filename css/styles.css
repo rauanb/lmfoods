@@ -109,6 +109,19 @@ body {
     /* background-color: #dfefff; */
 }
 
+.btn-primary {
+    background-color: var(--cor-secundaria);
+    border-color: var(--cor-secundaria);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+    color: #fff; /* garante legibilidade */
+};
+
 @media (max-width: 767px){
     .carousel-item img {
         /* height: 160px; */
