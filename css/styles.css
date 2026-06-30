@@ -120,7 +120,7 @@ body {
     background-color: var(--cor-primaria);
     border-color: var(--cor-primaria);
     color: #fff; /* garante legibilidade */
-};
+}
 
 @media (max-width: 767px){
     .carousel-item img {
