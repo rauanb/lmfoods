@@ -63,7 +63,7 @@
     </header>
 
     <!-- Todas as seções devem estar dentro dessa div com spy para funcionar o destaque da seção na navbar -->
-    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+    <div class="section-blue" data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
         <section class="mb-5">
             <!-- Carousel -->
             <div class="carousel slide" data-bs-ride="carousel" id="carousel">
@@ -111,8 +111,9 @@
                 </div>
             </div>
         </section>
-        <section class="pt-3" id="products">
-            <!-- Products -->
+
+        <!-- Products -->
+        <section class="pt-3 section-blue" id="products">
             <div class="container">
                 <div class="row">
                     <h2 class="fw-bold text-colored text-center">Our <span class="text-colored2">Products</span></h2>
@@ -201,17 +202,36 @@
             </div>
         </section>
 
-        <!-- Seção how to use -->
-        <section id="recipes" class="pt-5">
+        <!-- How to -->
+        <section class="py-5" id="recipes">
             <div class="container">
-                <div class="row">
-                    <h2 class="fw-bold text-colored text-center">How to <span class="text-colored2">Enjoy</span></h2>
+
+                <div class="card border-0 shadow-sm mx-auto text-center hero-card" style="max-width: 900px;">
+                    <div class="card-body p-5">
+
+                        <h2 class="fw-bold text-colored mb-3">
+                            How to Enjoy <span class="text-colored2">Creamyo</span>
+                        </h2>
+
+                        <p class="lead mb-4">
+                            Discover delicious recipes and creative ways to use Creamyo in
+                            pizzas, pastries, sandwiches, desserts, and much more.
+                        </p>
+
+                        <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
+                            <span class="badge bg-light text-dark p-2">🍕 Pizza</span>
+                            <span class="badge bg-light text-dark p-2">🥐 Pastries</span>
+                            <span class="badge bg-light text-dark p-2">🥪 Sandwiches</span>
+                            <span class="badge bg-light text-dark p-2">🍰 Desserts</span>
+                        </div>
+
+                        <a href="howtoenjoy/" class="btn btn-primary btn-lg px-4">
+                            Explore Ideas
+                        </a>
+
+                    </div>
                 </div>
-                <div class="row">
-                    <p class="fs-5">
-                        Discover delicious recipes and creative ways to enjoy Creamyo. Click <a href="/howtoenjoy/">here</a> to explore.
-                    </p>
-                </div>
+
             </div>
         </section>
 
@@ -243,7 +263,7 @@
         </section>
 
         <!-- Seção Buy -->
-        <section id="buy" class="pt-5">
+        <section id="buy" class="pt-5 section-blue">
             <div class="container">
                 <div class="row">
                     <h2 class="fw-bold text-colored text-center">Where to <span class="text-colored2">Buy</span></h2>
@@ -313,7 +333,6 @@
                         <i class="bi bi-telephone-fill me-1"></i>
                         (403) 680-1121
                     </a>
-
                 </div>
             </div>
         </section>
