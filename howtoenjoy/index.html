@@ -64,12 +64,14 @@
                     <h2 class="fw-bold text-colored text-center"><span class="text-colored2">Recipes</span></h2>
                     <h3 class="fw-bold text-colored text-center">Click to view</h3>
                 </div>
+
+                <!-- First row-->
                 <div class="row mt-6">
                     <!-- Card -->
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <img 
                             src="toast/avocadotoast.png" 
-                            alt="Creamyo with Avocado Toast"
+                            alt="Avocado Toast"
                             class="d-block w-100 rounded mb-2"
                             style="cursor: pointer;"
                             data-bs-toggle="modal"
@@ -78,13 +80,13 @@
 
                         <h3 class="fw-bold text-colored fs-4">
                             <i class="bi"></i>
-                            Creamyo with Avocado Toast
+                            Avocado Toast
                         </h3>
                         <p>With Creamyo Traditional</p>
                     </div>
 
                     <!-- Card -->
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <img 
                             src="appetizer/appetizer.png" 
                             alt="Appetizer"
@@ -96,7 +98,83 @@
 
                         <h3 class="fw-bold text-colored fs-4">
                             <i class="bi"></i>
-                            Creamyo with Prosciutto, Gorgonzola & Honey
+                            Prosciutto, Gorgonzola & Honey
+                        </h3>
+                        <p>With Creamyo Culinary</p>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="col-md-4">
+                        <img 
+                            src="bagel/bagel.png" 
+                            alt="bagel"
+                            class="d-block w-100 rounded mb-2"
+                            style="cursor: pointer;"
+                            data-bs-toggle="modal"
+                            data-bs-target="#bagelModal"
+                        >
+
+                        <h3 class="fw-bold text-colored fs-4">
+                            <i class="bi"></i>
+                            Bagel with Salmon
+                        </h3>
+                        <p>With Creamyo Culinary</p>
+                    </div>
+                    
+                </div>
+
+                <!-- Second row -->
+                <div class="row mt-6">
+                    <!-- Card -->
+                    <div class="col-md-4">
+                        <img 
+                            src="baguette/baguette.png" 
+                            alt="Baguette"
+                            class="d-block w-100 rounded mb-2"
+                            style="cursor: pointer;"
+                            data-bs-toggle="modal"
+                            data-bs-target="#baguetteModal"
+                        >
+
+                        <h3 class="fw-bold text-colored fs-4">
+                            <i class="bi"></i>
+                            Baguette
+                        </h3>
+                        <p>With Creamyo Traditional</p>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="col-md-4">
+                        <img 
+                            src="baked_potato/baked_potato.png" 
+                            alt="Loaded Baked Potato"
+                            class="d-block w-100 rounded mb-2"
+                            style="cursor: pointer;"
+                            data-bs-toggle="modal"
+                            data-bs-target="#bakedModal"
+                        >
+
+                        <h3 class="fw-bold text-colored fs-4">
+                            <i class="bi"></i>
+                            Loaded Baked Potato
+                        </h3>
+                        <p>With Creamyo Culinary</p>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="col-md-4">
+                        <img 
+                            src="burger/burger.png" 
+                            alt="Ultimate Cheeseburger"
+                            class="d-block w-100 rounded mb-2"
+                            style="cursor: pointer;"
+                            data-bs-toggle="modal"
+                            data-bs-target="#burgerModal"
+                        >
+
+                        <h3 class="fw-bold text-colored fs-4">
+                            <i class="bi"></i>
+                            Ultimate Cheeseburger
                         </h3>
                         <p>With Creamyo Culinary</p>
                     </div>
@@ -114,24 +192,23 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+    <!-- First row -->
     <!-- Modal -->
     <div class="modal fade" id="toastModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Avocado Toast</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
 
-            <div class="modal-header">
-                <h5 class="modal-title">Creamyo with Avocado Toast</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-
-            <div class="modal-body text-center">
-                <img 
-                    src="toast/avocadotoast_r.jpeg" 
-                    alt="Avocado Toast Recipe"
-                    class="img-fluid rounded"
-                >
-            </div>
-
+                <div class="modal-body text-center">
+                    <img 
+                        src="toast/avocadotoast_r.jpeg" 
+                        alt="Avocado Toast"
+                        class="img-fluid rounded"
+                    >
+                </div>
             </div>
         </div>
     </div>
@@ -140,20 +217,99 @@
     <div class="modal fade" id="appetizerModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">CProsciutto, Gorgonzola & Honey</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
 
-            <div class="modal-header">
-                <h5 class="modal-title">Creamyo with Prosciutto, Gorgonzola & Honey</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <div class="modal-body text-center">
+                    <img 
+                        src="appetizer/appetizer_r.png" 
+                        alt="Prosciutto, gorgonzola and honey"
+                        class="img-fluid rounded"
+                    >
+                </div>
             </div>
+        </div>
+    </div>
 
-            <div class="modal-body text-center">
-                <img 
-                    src="appetizer/appetizer_r.png" 
-                    alt="Creamyo with prosciutto, gorgonzola and honey"
-                    class="img-fluid rounded"
-                >
+    <!-- Modal -->
+    <div class="modal fade" id="bagelModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Bagel with Salmon</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center">
+                    <img 
+                        src="bagel/bagel_r.png" 
+                        alt="Bagel with Salmon"
+                        class="img-fluid rounded"
+                    >
+                </div>
             </div>
+        </div>
+    </div>
 
+    <!-- Second row -->
+    <!-- Modal -->
+    <div class="modal fade" id="baguetteModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Baguette</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center">
+                    <img 
+                        src="baguette/baguette_r.png" 
+                        alt="Baguette"
+                        class="img-fluid rounded"
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="bakedModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Loaded Baked Potato</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center">
+                    <img 
+                        src="baked_potato/baked_potato_r.png" 
+                        alt="Loaded Baked Potato"
+                        class="img-fluid rounded"
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="burgerModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ultimate Cheeseburger</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center">
+                    <img 
+                        src="burger/burger_r.png" 
+                        alt="Ultimate Cheeseburger"
+                        class="img-fluid rounded"
+                    >
+                </div>
             </div>
         </div>
     </div>
